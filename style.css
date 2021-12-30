@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+h1,
+p {
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: aliceblue;
+  padding-bottom: 80px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  /* background-color: grey; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  flex-basis: 20%;
+  padding: 40px;
+}
+
+section.sedan {
+  background-color: rgb(236, 167, 76);
+}
+
+section.suv {
+  background-color: rgb(56, 148, 143);
+}
+
+section.luxury {
+  background-color: rgb(3, 73, 62);
+}
+
+.button {
+  border-radius: 20px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.color-1 {
+  color: rgb(236, 167, 76);
+}
+
+.color-2 {
+  color: rgb(56, 148, 143);
+}
+
+.color-3 {
+  color: rgb(3, 73, 62);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
